@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/authorization-jwt/authorization-jwt.iml" filepath="$PROJECT_DIR$/authorization-jwt/authorization-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo1/demo1.iml" filepath="$PROJECT_DIR$/demo1/demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo2/demo2.iml" filepath="$PROJECT_DIR$/demo2/demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2auto/oauth2auto.iml" filepath="$PROJECT_DIR$/oauth2auto/oauth2auto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2demo/oauth2demo.iml" filepath="$PROJECT_DIR$/oauth2demo/oauth2demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resource-jwt/resource-jwt.iml" filepath="$PROJECT_DIR$/resource-jwt/resource-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/securityjwt/securityjwt.iml" filepath="$PROJECT_DIR$/securityjwt/securityjwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/securitylearn.iml" filepath="$PROJECT_DIR$/securitylearn.iml" />
+    </modules>
+  </component>
+</project>

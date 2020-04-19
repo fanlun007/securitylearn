@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oauth2demo" />
+        <module name="resource-jwt" />
+        <module name="oauth2auto" />
+        <module name="authorization-jwt" />
+        <module name="securityjwt" />
+        <module name="demo2" />
+        <module name="demo1" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authorization-jwt" target="8" />
+      <module name="demo1" target="6" />
+      <module name="demo2" target="1.5" />
+      <module name="oauth2auto" target="7" />
+      <module name="oauth2demo" target="7" />
+      <module name="resource-jwt" target="1.5" />
+      <module name="securityjwt" target="8" />
+      <module name="securitylearn" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authorization-jwt" options="" />
+      <module name="demo1" options="" />
+      <module name="demo2" options="" />
+      <module name="oauth2auto" options="" />
+      <module name="oauth2demo" options="" />
+      <module name="resource-jwt" options="" />
+      <module name="securityjwt" options="" />
+      <module name="securitylearn" options="-parameters" />
+    </option>
+  </component>
+</project>

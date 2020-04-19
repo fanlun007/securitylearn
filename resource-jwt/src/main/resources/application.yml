@@ -1,0 +1,16 @@
+server:
+  port: 7003
+
+security:
+  oauth2:
+    resource:
+      id: oauth2
+      token-info-uri: http://localhost:7002/oauth/check_token
+      jwt:
+        key-value: oauth2
+    client:
+      access-token-uri: http://localhost:7002/oauth/token
+      client-id: oauth
+      client-secret: oauth2
+      grant-type: authorization_code,password,refresh_token
+      scope: all

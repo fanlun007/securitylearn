@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      database: securitylearn_db
+      host: localhost
+      port: 27017
+
+security:
+  app:
+    jwtSecret: jwtSecretKey
+    jwtExpirationMs: 86400000
+
+server:
+  port: 8010
