@@ -12,14 +12,20 @@
 </head>
 <body>
 <div class="limiter">
-    <div class="container-login100" th:style="'background-image:url(' + @{/images/bg-01.jpg} + ');'">
+    <div class="container-login100" style="background: #727b84">
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
             <!--/*@thymesVar id="action" type="java.lang.String"*/-->
             <form class="login100-form validate-form" action="/oauth/authorize" method="post">
-                <span class="login100-form-title p-b-49"
-                      th:text="'客户端 ' + ${clientId} + ' 请求授权，该应用将访问您的资源信息。将会取得如下权限：' + ${scopeName}">
+                <span class="login100-form-title p-b-15"
+                      th:text="'客户端 ' + ${clientId} + ' 请求授权，该应用将访问您的资源信息。'">
                     请求授权
                 </span>
+
+                <span class="login100-form-title p-b-49"
+                      th:text="'将会取得如下权限：' + ${scopeName}">
+                    授权范围
+                </span>
+
                 <div class="wrap-input100 validate-input m-b-23">
                     <input type="hidden" name="user_oauth_approval" value="true">
                     <div style="display: none" th:each="scope : ${scopes}">
@@ -33,6 +39,10 @@
                         <div class="login100-form-bgbtn"></div>
                         <button type="submit" class="login100-form-btn">确认授权</button>
                     </div>
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button type="button" class="login100-form-btn" onclick="rejectButton()">拒绝授权</button>
+                    </div>
                 </div>
 
             </form>
@@ -42,6 +52,15 @@
 
 <script th:src="@{/js/jquery/jquery-3.2.1.min.js}"></script>
 <script th:src="@{/js/main.js}"></script>
+
+<script type="application/javascript">
+
+    function rejectButton() {
+        alert("reject Authorization")
+    }
+
+</script>
+
 </body>
 
 </html>
