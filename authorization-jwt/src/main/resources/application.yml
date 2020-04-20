@@ -6,3 +6,7 @@ securitylearn:
   clientsecret: oauth2
   signingkey: securitylearnSignKey
   redirecturl: http://localhost:7002/auth/redirect
+
+spring:
+  thymeleaf:
+    cache: false
