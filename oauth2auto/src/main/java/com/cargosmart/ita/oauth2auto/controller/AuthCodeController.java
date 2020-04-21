@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 @RestController
-public class AuthCodeController {
+public class  AuthCodeController {
 
     @Autowired
     private RestTemplate restTemplate;
