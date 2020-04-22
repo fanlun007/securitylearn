@@ -61,4 +61,9 @@ public class  AuthCodeController {
         httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         return httpHeaders;
     }
+
+    @GetMapping("/getCodeTest")
+    public void test(@RequestParam("code") String code) {
+        System.out.println(code);
+    }
 }
